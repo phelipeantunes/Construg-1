@@ -17,9 +17,9 @@ var conn = mysql.createConnection({
     port: 3306
 });
 
-// router.get('/', (req, res) => {
-//     res.status(200).send("AAAAAAAAAAA! OUTRO COMMIT TESTE");
-// });
+router.get('/', (req, res) => {
+    res.status(200).send("AAAAAAAAAAA! OUTRO COMMIT TESTE");
+});
 
 http.createServer(function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
