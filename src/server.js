@@ -1,6 +1,6 @@
 'use strict';
 var http = require('http');
-var port = process.env.PORT || 3333;
+var port = process.env.PORT || 1337;
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -20,9 +20,9 @@ var conn = mysql.createConnection({
     }
 });
 
-router.get('/', (req, res) => {
-    res.status(200).send("AAAAAAAAAAA! OUTRO COMMIT TESTE");
-});
+// router.get('/', (req, res) => {
+//     res.status(200).send("AAAAAAAAAAA! OUTRO COMMIT TESTE");
+// });
 
 http.createServer(function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
