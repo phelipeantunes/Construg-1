@@ -14,10 +14,7 @@ var conn = mysql.createConnection({
     host: "pesquisamysql.mysql.database.azure.com",
     user: "rootpesquisa", password: "{pesquisa@123}",
     database: "{your_database}",
-    port: 3306,
-    ssl: {
-        ca: fs.readFileSync("{ca-cert filename}")
-    }
+    port: 3306
 });
 
 // router.get('/', (req, res) => {
