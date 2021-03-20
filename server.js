@@ -21,7 +21,7 @@ var conn = mysql.createConnection({
 });
 
 router.get('/', (req, res) => {
-    res.status(200).send("Unauthorized access to MBF.");
+    res.status(200).send("AAAAAAAAAAA!");
 });
 
 http.createServer(function (req, res) {
