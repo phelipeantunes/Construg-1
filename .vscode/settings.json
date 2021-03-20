@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/a2a3ee9c-f937-4873-95e2-3261ecabc7b3/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/PesquisaNodeAPI",
+    "appService.deploySubpath": "."
+}
