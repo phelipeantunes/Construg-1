@@ -3,12 +3,14 @@ var http = require('http');
 var port = process.env.PORT || 3333;
 const express = require("express");
 const bodyParser = require("body-parser");
-const cors = require("cors");
 const sqlite3 = require("sqlite3").verbose();
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 const mysql = require('mysql');
 const fs = require("fs");
+
+const app = express();
+const router = express.Router();
 
 var conn = mysql.createConnection({
     host: "pesquisamysql.mysql.database.azure.com",
