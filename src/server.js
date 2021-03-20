@@ -19,7 +19,7 @@ var conn = mysql.createConnection({
     port: 3306
 });
 
-router.get('/', (req, res) => {
+router.get('/teste', (req, res) => {
     res.status(200).send("AAAAAAAAAAA! OUTRO COMMIT TESTE");
 });
 
