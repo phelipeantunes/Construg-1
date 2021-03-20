@@ -23,7 +23,10 @@ router.get('/teste', (req, res) => {
     res.status(200).send("AAAAAAAAAAA! OUTRO COMMIT TESTE");
 });
 
-http.createServer(function (req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Hello World\n');
-}).listen(port);
+app.use(router);
+
+var serverHttp = http.createServer(app);
+
+serverHttp.listen(port, function () {
+    console.log('HTTP Express server listening on port ' + port);
+});
