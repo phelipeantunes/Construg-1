@@ -20,7 +20,7 @@ var conn = mysql.createConnection({
 });
 
 router.get('/teste', (req, res) => {
-    res.status(200).send("AAAAAAAAAAA! OUTRO COMMIT TESTE");
+    res.status(200).send("xsbjbxsjk! OUTRO COMMIT TESTE");
 });
 
 router.get('/', (req, res) => {
